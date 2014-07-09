@@ -38,4 +38,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="trans" value="{% trans -%}&#10;&#9;$END$&#10;{%- endtrans %}" description="trans" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
