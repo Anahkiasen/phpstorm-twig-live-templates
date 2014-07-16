@@ -44,7 +44,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="include" value="{% include '$TEMPLATE$'$END %}" description="include" toReformat="false" toShortenFQNames="true">
+  <template name="include" value="{% include '$TEMPLATE$'$END$ %}" description="include" toReformat="false" toShortenFQNames="true">
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
