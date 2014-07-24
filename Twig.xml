@@ -14,7 +14,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="extends" value="{% extends '$VIEW$' %}&#10;&#10;$END$" description="extends" toReformat="true" toShortenFQNames="true">
+  <template name="extends" value="{% extends '$VIEW$' %}&#10;&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
@@ -22,7 +22,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="set" value="{% set $VARIABLE$ = $VALUE$ %}" description="set" toReformat="true" toShortenFQNames="true">
+  <template name="set" value="{% set $VARIABLE$ = $VALUE$ %}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -30,7 +30,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="for" value="{% for $VARIABLE$ in $ARRAY$ %}&#10;  $END$&#10;{% endfor %}" description="for" toReformat="true" toShortenFQNames="true">
+  <template name="for" value="{% for $VARIABLE$ in $ARRAY$ %}&#10;  $END$&#10;{% endfor %}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -38,26 +38,26 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="trans" value="{% trans -%}&#10;&#9;$END$&#10;{%- endtrans %}" description="trans" toReformat="true" toShortenFQNames="true">
+  <template name="trans" value="{% trans -%}&#10;&#9;$END$&#10;{%- endtrans %}" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="include" value="{% include '$TEMPLATE$'$END$ %}" description="include" toReformat="true" toShortenFQNames="true">
+  <template name="include" value="{% include '$TEMPLATE$'$END$ %}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="verbatim" value="{% verbatim %}&#10;&#9;$END$&#10;{% endverbatim %}" description="verbatim" toReformat="true" toShortenFQNames="true">
+  <template name="verbatim" value="{% verbatim %}&#10;&#9;$END$&#10;{% endverbatim %}" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="macro" value="{% macro $NAME$($VARIABLES$) %}&#10;&#9;$END$&#10;{% endmacro %}" description="macro" toReformat="true" toShortenFQNames="true">
+  <template name="macro" value="{% macro $NAME$($VARIABLES$) %}&#10;&#9;$END$&#10;{% endmacro %}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VARIABLES" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -65,7 +65,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="from" value="{% from '$VIEW$' import $MACROS$ $END$%}" description="from" toReformat="true" toShortenFQNames="true">
+  <template name="from" value="{% from '$VIEW$' import $MACROS$ $END$%}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MACROS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -73,4 +73,12 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="embed" value="{% embed '$VIEW$' %}&#10;&#9;$END$&#10;{% endembed %}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
+
