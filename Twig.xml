@@ -19,7 +19,6 @@
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="set" value="{% set $VARIABLE$ = $VALUE$ %}" description="" toReformat="true" toShortenFQNames="true">
