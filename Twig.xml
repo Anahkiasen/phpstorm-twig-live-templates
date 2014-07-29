@@ -79,5 +79,14 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="transplural" value="{% trans -%}&#10;  $SINGULAR$&#10;{%- plural $COUNT$ -%}&#10;  $PLURAL$&#10;{%- endtrans %}" toReformat="false" toShortenFQNames="true">
+    <variable name="SINGULAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COUNT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLURAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
 
