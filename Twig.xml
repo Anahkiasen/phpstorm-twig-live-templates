@@ -88,5 +88,12 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="autoescape" value="{% autoescape $VALUE$ %}&#10;&#9;$END$&#10;{% endautoescape %}" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
 
